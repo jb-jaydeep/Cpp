@@ -33,6 +33,7 @@
 <img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-1(Fundamental%20Booster)/images/pr-1-4.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 5**</u> : Write a program to find square root of given numbers from array elements.
+
 <u>**Program File**</u> : pr-1-5.cpp
 
 <u>**Output**</u> :
