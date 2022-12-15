@@ -6,7 +6,7 @@
 
 <u>**Output**</u> :
 
-<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-3(The%20New%20Era)/Images/pr-3-1.png" height = "200px" alt = "unable to load image.">
+<img src="[https://github.com/jb-jaydeep/Cpp/blob/main/pr-3(The%20New%20Era)/Images/pr-3-1.png](https://github.com/jb-jaydeep/Cpp/blob/main/pr-3(The%20New%20Era)/Images/pr-3-1.png)" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 2**</u> : Write a program  to create a class to read and add two times.
 
