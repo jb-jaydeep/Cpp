@@ -1,6 +1,6 @@
 # PR - 1.
 
-<u>**Aim 1**</u> : Write a program to check given string is numeric or not.
+<U>**Aim 1**</U> : Write a program to check given string is numeric or not.
 
 <u>**Program File**</u> : pr-1-1.cpp
 
