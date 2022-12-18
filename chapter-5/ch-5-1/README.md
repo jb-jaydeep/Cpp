@@ -15,7 +15,7 @@
 
 <u>**Output**</u> :
 
-<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-1(Fundamental%20Booster)/images/pr-1-1.PNG" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/chapter-5/ch-5-1/images/ch-5-1-1.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 2**</u> : Write a program to get and display 5 Customers information using encapsulation by including below mentioned attributes:
 - cust_id
@@ -30,4 +30,4 @@
 
 <u>**Output**</u> :
 
-<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-1(Fundamental%20Booster)/images/pr-1-2.png" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/chapter-5/ch-5-1/images/ch-5-1-2.png" height = "200px" alt = "unable to load image.">
