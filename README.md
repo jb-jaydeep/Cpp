@@ -189,11 +189,11 @@
 
         Variable / reference of class.
 ***
-> **CHAPTER - 5**
+> **CHAPTER - 4**
 
 > **DATA ENCAPSULATION.**
 ***
-> **5.1**
+> **4.1**
 ***
 - **WHAT IS DATA ENCAPSULATION.**
 
@@ -219,88 +219,99 @@
 
     Call a one function to another one function it's called a nested member function.
 ***
-> **5.2**
+> **4.2**
 ***
 - **ARRAY OF OBJECTS.**
 - **WHAT IS STATIC MEMBER?**
+
+	Common member for all objects which takes the single memory allocation.
+	
+	For all the objects, static member will common and only one.
+
+ - **TYPES OF STATIC MEMBER.**
+ 
+  	- **STATIC DATA MEMBER.**
+	- **STATIC MEMBER FUNCTION.**
+	
+	  We can only use static data members in static function, any other attributes won't be allowed. 
+	
 - **STATIC KEYWORD.**
-- **STATIC DATA MEMBER.**
-- **STATIC MEMBER FUNCTION.**
 - **SCOPE RESOLUTION OPERATOR.**
 
     **::** - scope resolution operator.
 
-        **program to know 5.2**
+        **program to know 4.2**
 
-        #include<iostream>
-        using namespace std;
-
-        class Cust {
+       #include<iostream>
+       using namespace std;
+       ostream &t(ostream & output){
+       return output << "\t";
+       }
+       class Hotel {
 	
-	    private :
-		int cid;
-		string cname;
-		int cage;
-		string ctbn;
-		string cmn;
-		string cc;
-		string csv;
-		
-	    public :
-            //SETTER
-
-			void inputdata(int i,int n){
-			
-			system("cls");	
-			cout << "Customer No. "<< i << " of " << n << endl;
-			
-			cout << "Enter a customer Id\t\t\t:";
-			cin  >> cid;
-			
-			cout << "Enter a customer Name\t\t\t:";
-			cin  >> cname;
-			
-			cout << "Enter a customer Age\t\t\t:";
-			cin  >> cage;
-			
-			cout << "Enter a customer telecom brand name\t:";
-			cin  >> ctbn;
-			
-			cout << "Enter a customer mobile no\t\t:";
-			cin  >> cmn;
-			
-			cout << "Enter a customer City\t\t\t:";
-			cin  >> cc;
-			
-			cout << "Enter a customer simcard validity\t:";
-			cin  >> csv;
-		}
-		
-		static void header(){    // STATIC FUNCTION
+		private :
+		int id;
+		string type;
+		string rating;
+		string year;
+		int staff;
+		int room;
+		// Static member declaration.
+		static string name;
+		static string location;
+		public :
+		void input(int i, int a) {
 			system("cls");
-			cout <<"ID\tNAME\tAGE\tBRAND\tMO.NUMBER\tCITY\tSIMCARD VALIDITY\n"
-			     <<"======= ======= ======= ======= =============== ======= ================\n";
+			cout << endl << endl << "enter a hotel data "<< i << " of "<< a << endl;
+			cout << "Enter a hotel Id\t: ";
+			cin  >> id;
+			cout << "Enter a hotel type (like hotel or motel)\t: ";
+			cin  >> type;
+			cout << "Enter a hotel rating (like 1 Star, 2 Start, ..., 7 Star)\t: ";
+			cin  >> rating;
+			cout << "Enter a hotel establish year\t: ";
+			cin  >> year;
+			cout << "Enter a hotel staff quantity\t: ";
+			cin  >> staff;
+			cout << "Enter a hotel room quantity\t: ";
+			cin  >> room; 
 		}
-        //GETTER
-		void outputdata(){
-			
-				cout  << cid << "\t"<< cname << "\t" 
-			      << cage << "\t" <<  ctbn 
-				  <<"\t" <<cmn << "\t" << cc
-				   << "\t" << csv << endl;
-		}
-			
-	    };
-	
-	    int main(){
-		int i,n=5;
-		Cust s[n];    //ARRAY OF OBJECT
 		
-		for(i=0;i<n;i++)
-			s[i].inputdata(i+1,n);
-			
-		Cust::header();      // CALLING OF STATIC FUNCTION.
-		for(i=0;i<n;i++)
-			s[i].outputdata();		
-	    }
+		void output(){
+				cout << id << t  << type << t  << rating << t
+			         << year << t  <<staff << t 
+			     << room <<t << location << endl;
+			    
+		}
+		
+		// static member function
+		static void header(){
+				system("cls");
+				cout << t<<t<<name << endl;
+				cout << "Id\tType\tRating\tYear\tStaff\tRooms\tlocation\n"
+				      <<"=======\t=======\t=======\t=======\t=======\t=======\t=======\n";
+   		}
+		
+           };
+
+                string Hotel::name = "The Grand Bhagvati- TGB"; //Assign value of static member 
+                string Hotel::location = "Surat";               //Assign value of static member 
+		
+                int main() {
+	
+	        int a;
+	
+	        cout << "Enter the number of hotel : ";
+	        cin  >> a;
+	
+	        Hotel H[a];  //Array of object.
+
+	
+	        for(int i=0; i<a; i++) 	H[i].input(i+1,a);
+	
+	        Hotel::header(); // static function calling.
+	
+	        for(int i=0; i<a; i++) 	H[i].output();
+
+           }
 
