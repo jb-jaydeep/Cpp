@@ -16,4 +16,4 @@
 
 <u>**Output**</u> :
 
-<img src="https://github.com/jb-jaydeep/Cpp/tree/main/chapter-4/ch-5-1" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/chapter-4/ch-4-2/Image/ch-5-2-1.png" height = "200px" alt = "unable to load image.">
