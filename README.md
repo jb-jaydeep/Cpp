@@ -215,7 +215,7 @@
 > **5.2**
 ***
 - **ARRAY OF OBJECTS.**
-- *8WHAT IS STATIC MEMBER?**
+- **WHAT IS STATIC MEMBER?**
 - **STATIC KEYWORD.**
 - **STATIC DATA MEMBER.**
 - **STATIC MEMBER FUNCTION.**
@@ -271,7 +271,8 @@
 		
 		static void header(){    // STATIC FUNCTION
 			system("cls");
-			cout <<"ID\tNAME\tAGE\tBRAND\tMO.NUMBER\tCITY\tSIMCARD VALIDITY\n======= ======= ======= ======= =============== ======= ================\n";
+			cout <<"ID\tNAME\tAGE\tBRAND\tMO.NUMBER\tCITY\tSIMCARD VALIDITY\n"
+			     <<"======= ======= ======= ======= =============== ======= ================\n";
 		}
         //GETTER
 		void outputdata(){
