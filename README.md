@@ -18,15 +18,22 @@
 
 - **DIFFERENCE BETWEEN C & C++.**
 
-        #include<iostream>
-        using namespace std;
-
-        int main()
-        {
-            cout << "Hello World";
-        }
+	| **TOPIC**       |      **C**      |      **C++**      |
+	| :---         |     :---:      |          ---: |
+	| **FILE EXTENSION**   | .C     | .CPP    |
+	| **RETURN TYPE**    | void       | int      |
+	| **OUTPUT**    | printf       | cout     |
+	| **INPUT**    | scanf       | cin     |
 
 - **BASIC PROGRAM STRUCTURE OF C++ IN DEV-C++.**
+
+	  #include<iostream>
+	  using namespace std;
+
+         int main()
+      	 {
+            cout << "Hello World";
+      	 }
 
 - **USING NAMESPACE STD.**
 - **COUT & CIN OBJECTS.**
