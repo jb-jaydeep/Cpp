@@ -240,7 +240,7 @@
 
     **::** - scope resolution operator.
 
-        **program to know 4.2**
+        program to know 4.2
 
        #include<iostream>
        using namespace std;
