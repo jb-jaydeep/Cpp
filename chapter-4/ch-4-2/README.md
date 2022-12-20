@@ -12,7 +12,7 @@
 - hotel_staff_quantity
 - hotel_room_quantity
 
-<u>**Program File**</u> : ch-4-1-1.cpp
+<u>**Program File**</u> : ch-4-2-1.cpp
 
 <u>**Output**</u> :
 
