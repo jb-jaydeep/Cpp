@@ -341,7 +341,7 @@
 		       
 		    }
 		}
-	- **TYPE OF FRIEND FUNCTION : *
+	- **TYPE OF FRIEND FUNCTION :**
 		- Default.
 		- Parameterized.
 		
