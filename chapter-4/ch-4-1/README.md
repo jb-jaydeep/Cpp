@@ -1,6 +1,6 @@
-# CHAPTER- 5.
+# CHAPTER- 4.
 
-## 5.1
+## 4.1
 
 <u>**Aim 1**</u> : Write a program to get and display 5 Students information using encapsulation by including below mentioned attributes:
 - stu_id
