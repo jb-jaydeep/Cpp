@@ -2,7 +2,7 @@
 
 ## 4.2
 
-<u>**Aim 1**</u> : 1. WAP to get and display N numbers of Hotels and static information using encapsulation with array of objects member  by including below mentioned attributes:
+<u>**Aim 1**</u> : WAP to get and display N numbers of Hotels and static information using encapsulation with array of objects member  by including below mentioned attributes:
 - hotel_id
 - hotel_name
 - hotel_type (like hotel or motel)
