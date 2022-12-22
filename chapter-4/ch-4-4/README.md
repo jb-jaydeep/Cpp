@@ -15,9 +15,9 @@
 
 <u>**Output**</u> :
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/chapter-4/ch-4-4/images/ch-4-4-1-1.png" height = "200px" alt = "unable to load image.">
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/chapter-4/ch-4-4/images/ch-4-4-1-2.png" height = "200px" alt = "unable to load image.">
 
 
 <u>**Aim 2**</u> :Write a program to get and display N numbers of Fast Food cafe information using encapsulation and use of default constructor by including below mentioned attributes:
@@ -33,7 +33,7 @@
 
 <u>**Output**</u> :
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/chapter-4/ch-4-4/images/ch-4-4-2-1.png" height = "200px" alt = "unable to load image.">
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/chapter-4/ch-4-4/images/ch-4-4-2-2.png" height = "200px" alt = "unable to load image.">
 
