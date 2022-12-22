@@ -442,3 +442,163 @@
 		Sumtime(t1 , t2);
 		}
 		
+***
+> **4.3**
+***
+- **WHAT IS CONSTRUCTOR?**
+
+	Constructor is a block of code which is automatically invoked when class is instantiated.
+	
+	- **RULES TO CREATE CONSTRUCTOR.**
+		- It's name must be same as class's name.
+		- It must not have any return data type.(void,int,char.)
+		- It must not return any value.
+		
+- **TYPE OF CONSTRUCTOR.**
+
+	-**DEFAULT**
+		
+		//program.....
+		#include<iostream>
+		using namespace std;
+		
+		class Hotel {
+		private : 
+			int id;
+		public :
+		//Default Constructor..
+		Hotel () {
+			cout << "Welcome to the TGB"<< endl 
+			cout << "Enter your ID NO. : ";
+			cin  << id;
+		
+			cout << "Your id is :" << id << endl;
+		}
+		};
+		int main() {
+			Hotel h;
+		}
+		
+	-**PARAMETERIZED**
+		
+		//program.....
+		#include<iostream>
+		using namespace std;
+		
+		class Hotel {
+		private : 
+			int id;
+			string name;
+		public :
+		// Parameterized Constructor..
+		Hotel (int id, string name) {
+		
+			this -> id = id;
+			this -> name = name;
+		
+		cout << "Your id is :" << id << endl
+		     << "Name :" << name << endl;
+		}
+		};
+		int main() {
+		Hotel h(101,"Jaydeep");
+		}
+	
+	
+	-**COPY**
+		
+		-**IMPLICIT(DIRECTLY)**
+		
+				//program.....
+				#include<iostream>
+				using namespace std;
+				private :
+				int id;
+				string name;
+
+				public :
+
+				Hotel () {
+				cout << "Welcome to the TGB"<< endl   											
+				cout << "Enter your ID NO. : ";
+				cin  << id;
+				cout << "Your id is :" << id << endl;
+
+				}
+
+				Hotel (int id, string name) {
+				this -> id = id;
+				this -> name = name;
+
+				cout << "Your id is :" << id << endl
+				     << "Name :" << name << endl;
+				}
+				};
+
+				int main() {
+
+				Hotel h(101,"Jaydeep");
+				Hotel h1(102,"Jay")
+				Hotel h2(103,"Deep")
+				Hotel h3 = h1; // Implicit copy constructor.
+
+			  }
+
+		  
+		  
+		  //program.....
+				#include<iostream>
+				using namespace std;
+				class Hotel {
+				private : 
+				int id;
+				string name;
+				public :
+				Hotel () {
+				cout << "Welcome to the TGB"<< endl 
+				cout << "Enter your ID NO. : ";
+				cin  << id;
+				cout << "Your id is :" << id << endl;
+			    }
+
+				Hotel (int id, string name) {
+
+						this -> id = id;
+						this -> name = name;
+
+						cout << "Your id is :" << id << endl
+						      << "Name :" << name << endl;
+				}
+				//Explicit copy constructor...
+				Hotel (Hotel &h) {
+
+						h.id = id;
+						h.name = name;
+
+						cout << "Your id is :" << id << endl
+						     << "Name :" << name << endl;
+				}
+				};
+
+					int main() {
+
+					Hotel h;
+					Hotel h1(101,"Jaydeep");
+					Hotel h2(102,"Jay")
+					Hotel h3(103,"Deep")
+					Hotel h4 = h1; // Implicit copy constructor.
+					Hotel hs(h2);
+				}
+																				
+		
+- **WHAT IS DESTRUCTOR?**
+
+	A block of code which is automatically invoked when object is destroyed or deleted.
+	
+	- **RULES TO CREATE DISTRUCTOR.**
+	
+		- It's name must be same as class's name & start with tild operator(~).
+		- It must not have any return data type.(void,int,char.)
+		- It must not return any value.
+		- Destructor can't have any parameters.
+		
