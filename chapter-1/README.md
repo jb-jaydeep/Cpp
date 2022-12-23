@@ -38,7 +38,7 @@
 
 <u>**Output**</u> :
 
-<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-1(Fundamental%20Booster)/images/pr-1-1.PNG" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/chapter-1/IMAGES/CH-1-1.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 2**</u> : Write a program to convert given string into toggle case.
 
@@ -46,7 +46,7 @@
 
 <u>**Output**</u> :
 
-<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-1(Fundamental%20Booster)/images/pr-1-1.PNG" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/chapter-1/IMAGES/ch-1-2.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 3**</u> : Write a program to find all leap years from 2020 to 3030 and store
 them into an array.
@@ -55,4 +55,4 @@ them into an array.
 
 <u>**Output**</u> :
 
-<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-1(Fundamental%20Booster)/images/pr-1-1.PNG" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/chapter-1/IMAGES/ch-1-3.png" height = "200px" alt = "unable to load image.">
