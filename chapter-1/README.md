@@ -1,6 +1,4 @@
 ***
-# <Center> **C++** </center>
-***
 > **CHAPTER - 1**
 
 > **INTRODUCTION TO C++.**
@@ -40,7 +38,7 @@
 - **COUT & CIN OBJECTS.**
 ***
 
-> TASK OF CHAPTER 1.
+> **TASK OF CHAPTER 1.**
 
 <u>**Aim 1**</u> : Write a program to find all even elements from given 1D array.
  
