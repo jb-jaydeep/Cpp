@@ -146,12 +146,12 @@ Requirements:
 
 <u>**Output**</u> :
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-16-1.png" height = "200px" alt = "unable to load image.">
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-16-2.png" height = "200px" alt = "unable to load image.">
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-16-3.png" height = "200px" alt = "unable to load image.">
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-16-4.png" height = "200px" alt = "unable to load image.">
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-16-5.png" height = "200px" alt = "unable to load image.">
