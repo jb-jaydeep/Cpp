@@ -48,7 +48,7 @@
     It boosts performance speed by exchanging function's body while calling.
  
  ***
-> **TASK OF CHAPTER 1.**
+> **TASK OF CHAPTER 2.**
 
 <u>**Aim 1**</u> : Write a program to find factorial of all elements from given array using inline function.
  
