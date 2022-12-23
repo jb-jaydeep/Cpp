@@ -1,12 +1,15 @@
-> CHAPTER - 1 
+***
+# <Center> **C++** </center>
+***
+> **CHAPTER - 1**
 
-> INTRODUCTION TO C++.
+> **INTRODUCTION TO C++.**
+***
+- **HISTORY OF C++.**
 
-- HISTORY OF C++.
+    **POP -** Procedurel Oriented Programming.
 
-    POP - Procedurel Oriented Programming.
-
-    OOP - Object Oriented Programming.
+    **OOP -** Object Oriented Programming.
 
     Bjarne Stroustrup - P.H.D. in OOP.
 
@@ -14,21 +17,28 @@
 
     In 1980 - C++.
 
-- DIFFERENCE BETWEEN C & C++.
+- **DIFFERENCE BETWEEN C & C++.**
 
-        #include<iostream>
-        using namespace std;
+	| **TOPIC**       |      **C**      |      **C++**      |
+	| :---         |     :---:      |          ---: |
+	| **FILE EXTENSION**   | .C     | .CPP    |
+	| **RETURN TYPE**    | void       | int      |
+	| **OUTPUT**    | printf       | cout     |
+	| **INPUT**    | scanf       | cin     |
 
-        int main()
-        {
+- **BASIC PROGRAM STRUCTURE OF C++ IN DEV-C++.**
+
+	  #include<iostream>
+	  using namespace std;
+
+         int main()
+      	 {
             cout << "Hello World";
-        }
+      	 }
 
-- BASIC PROGRAM STRUCTURE OF C++ IN DEV-C++.
-
-- USING NAMESPACE STD.
-
-- COUT & CIN OBJECTS.
+- **USING NAMESPACE STD.**
+- **COUT & CIN OBJECTS.**
+***
 
 > TASK OF CHAPTER 1.
 
