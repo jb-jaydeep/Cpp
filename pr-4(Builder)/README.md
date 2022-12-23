@@ -15,7 +15,7 @@
 
 <u>**Output**</u> :
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-2.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 3**</u> :Write a program to create a class Hotel with fields like id, name, type, staff_size, room_size, establish_year, address, rating_type and website. Illustrate the use of encapsulation (strict encapsulation) with this keyword.
 
@@ -23,7 +23,7 @@
 
 <u>**Output**</u> :
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-3.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 4**</u> :Write a program to create two class HighSchool and College with fields like id, stu_name, stu_roll_no, stu_standard, stu_age, stu_contact, stu_edu_institute_name and stu_address. Make suitable setter and getter with use of static data members.
 
@@ -31,9 +31,9 @@
 
 <u>**Output**</u> :
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-4-1.png" height = "200px" alt = "unable to load image.">
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-4-2.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 5**</u> :Write a program to create a class which have both static data member and static member function. That class gives details of all states in India.
 
@@ -41,7 +41,7 @@
 
 <u>**Output**</u> :
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-5.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 6**</u> :Write a program  to demonstrate example of default constructor or no argument constructor.
 
@@ -49,7 +49,7 @@
 
 <u>**Output**</u> :
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-6.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 7**</u> :Write a program to demonstrate example of parameterized constructor.
 
@@ -57,7 +57,7 @@
 
 <u>**Output**</u> :
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-7.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 8**</u> :Write a program to demonstrate example of copy constructor.
 
@@ -65,7 +65,7 @@
 
 <u>**Output**</u> :
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-8.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 9**</u> :Write a program to demonstrate example of destructors.
 
@@ -73,7 +73,7 @@
 
 <u>**Output**</u> :
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-9.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 10**</u> :Write a program to create a class which Set values of data members using default, parameterized and copy constructo
 
@@ -81,7 +81,7 @@
 
 <u>**Output**</u> :
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-10.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 11**</u> :Write a program to create a class which illustrate the use of constant object.
 
@@ -89,7 +89,7 @@
 
 <u>**Output**</u> :
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-11.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 12**</u> :Write a program to create a class for student to get and print details of N students. (with use of array of objects)
 
@@ -97,7 +97,7 @@
 
 <u>**Output**</u> :
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-12.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 13**</u> :Write a program to make Railway Reservation System.
 
@@ -113,9 +113,9 @@ Requirements:
 
 <u>**Output**</u> :
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-13-1.png" height = "200px" alt = "unable to load image.">
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-13-2.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 14**</u> :Write a program to make Supermarket Billing System.
 Requirements:
@@ -130,7 +130,7 @@ Requirements:
 
 <u>**Output**</u> :
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-14.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 15**</u> :Write a program which perform Addition of members of two different classes using friend Function.
 
@@ -138,7 +138,7 @@ Requirements:
 
 <u>**Output**</u> :
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-15.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 16**</u> :Write a program  to make Bank Management System.
 
