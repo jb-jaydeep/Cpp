@@ -602,7 +602,7 @@
 		- It must not return any value.
 		- Destructor can't have any parameters.
 		
-- PROGRAM FOR dESTRUCTOR.
+- **PROGRAM FOR DESTRUCTOR.**
 		
 		#include<iostream>
 		using namespace std;
@@ -612,7 +612,7 @@
 		public :
 		~JB() {
 			cout << "--------------------------------" << endl
-			     << " Thank you for visit............"<< endl
+			     << " Thank you for visit............" << endl
 			     << "--------------------------------" << endl; 	
 		}
 		};
