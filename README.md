@@ -519,7 +519,7 @@
 				public :
 
 				Hotel () {
-				cout << "Welcome to the TGB"<< endl   											
+				cout << "Welcome to the TGB"<< endl;
 				cout << "Enter your ID NO. : ";
 				cin  << id;
 				cout << "Your id is :" << id << endl;
