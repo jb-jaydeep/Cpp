@@ -507,7 +507,7 @@
 	
 	-**COPY**
 		
-		-**IMPLICIT(DIRECTLY)**
+	-**IMPLICIT(DIRECTLY)**
 		
 				//program.....
 				#include<iostream>
@@ -543,10 +543,10 @@
 				Hotel h3 = h1; // Implicit copy constructor.
 
 			  }
+			  
+	-**EXPLICIT(FORCEFULLY)**
 
-		  
-		  
-		  //program.....
+				//program.....
 				#include<iostream>
 				using namespace std;
 				class Hotel {
@@ -587,7 +587,7 @@
 					Hotel h2(102,"Jay")
 					Hotel h3(103,"Deep")
 					Hotel h4 = h1; // Implicit copy constructor.
-					Hotel hs(h2);
+					Hotel hs(h2); // Explicit copy constructor.
 				}
 																				
 		
@@ -601,4 +601,29 @@
 		- It must not have any return data type.(void,int,char.)
 		- It must not return any value.
 		- Destructor can't have any parameters.
+		
+- PROGRAM FOR dESTRUCTOR.
+		
+		#include<iostream>
+		
+		using namespace std;
+
+		/*   WAP to demonstrate example of destructors.  */
+
+		class JB {
+	
+		public :
+		
+		~JB() {
+			
+				cout << "--------------------------------" << endl
+			         << " Thank you for visit............"<< endl
+				     << "--------------------------------" << endl; 	
+		}
+		};
+
+		int main() {
+	
+		JB j;
+		}
 		
