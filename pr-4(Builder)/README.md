@@ -7,7 +7,7 @@
 
 <u>**Output**</u> :
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-4(Builder)/images/pr-4-1.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 2**</u> :Write a program to create a class which Read and print Class, Student details using Two Classes. (Make two classes, create one classe's obj in another class.)
 
