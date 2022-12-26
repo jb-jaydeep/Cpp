@@ -195,7 +195,7 @@
 ***
 > **4.1**
 ***
-- **WHAT IS DATA ENCAPSULATION.**
+- **WHAT IS DATA ENCAPSULATION?**
 
     To wrap the code into reusable methods of class, convert UDFs into data member function and convert variables into data members is called encapsulation.
 
@@ -621,3 +621,12 @@
 		JB j;
 		}
 		
+***
+> **CHAPTER - 5**
+
+> **INHERITANCE.**
+***
+> **5.1**
+***
+- **WHAT IS HERITANCE?**
+- **TYPES OF HERITANCE.**
