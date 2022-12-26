@@ -11,7 +11,7 @@
 
 <u>**Output**</u> :
 
-<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-1(Fundamental%20Booster)/images/pr-1-1.PNG" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/chapter-5/images/ch-5-1-1.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 2**</u> :WAP to convert given degree celsius temperature into fahrenheit and convert that fahrenheit temperature into kelvin by implementing multilevel inheritance: Class P -> Class Q -> Class R.
 
@@ -23,4 +23,4 @@
 
 <u>**Output**</u> :
 
-<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-1(Fundamental%20Booster)/images/pr-1-2.png" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/chapter-5/images/ch-5-1-2.png" height = "200px" alt = "unable to load image.">
