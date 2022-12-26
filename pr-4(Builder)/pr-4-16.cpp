@@ -156,7 +156,7 @@ public:
             cout << endl << "----------------------------------------------------------------------------------------------------------" << endl;
             cout << "\t\t\tYour Actual Amount is   :- " << def << endl;
 
-            if (with <= 200000)
+            if (with <= 900000)
             {
             	cout << "\t\t\tYour Transfer Transaction successful." << endl;
                 cout << "\t\t\tYour Account Balence is :- "<< def - with << endl;
@@ -177,7 +177,7 @@ public:
             cout << endl << "----------------------------------------------------------------------------------------------------------" << endl;
             cout << "\t\t\tYour Actual Balance is  :- " << def << endl;
 
-            if (with <= 200000)
+            if (with <= 900000)
             {
             	cout << "\t\t\tYour withdrawal Transaction successful." << endl;
                 cout << "\t\t\tYour Account Balence is :- " << def - with << endl;
