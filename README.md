@@ -629,4 +629,12 @@
 > **5.1**
 ***
 - **WHAT IS HERITANCE?**
+	- Share attributes and methods from one class to another class.
 - **TYPES OF HERITANCE.**
+	- Single level.
+	- Multi level.
+	- Multiple.
+	- Hierarchical.
+	- Hybrid.
+  - Diagram of single level heritance.
+  
