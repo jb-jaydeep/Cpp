@@ -636,5 +636,208 @@
 	- Multiple.
 	- Hierarchical.
 	- Hybrid.
-  - Diagram of single level heritance.
+	
+  - **Diagram of single level heritance.**
   
+  	Here A & B is a class.
+	
+     ```mermaid
+     graph TB;
+   	 A-->B;
+     ```
+     Minimum no. of class required : 2
+     
+     Maximum no. of class required : 2
+     
+ - **Diagram of multi level heritance.**
+ 
+ 	Here A, B & C is a class.
+	
+     ```mermaid
+     graph TB;
+   	 A-->B;
+	 B-->C;
+     ```
+     Minimum no. of class required : 3
+     
+     Maximum no. of class required : n
+     
+- **Diagram of multiple heritance.**
+
+	Here A, B & C is a class.
+	
+     ```mermaid
+     graph TB;
+   	 A-->C;
+	 B-->C;
+     ```
+     Minimum no. of parent class required : 2
+     
+     maximum no. of child class required : 1
+     
+- **Diagram of hierarchical heritance.**
+
+	Here A, B & C is a class.
+	
+     ```mermaid
+     graph TB;
+   	 A-->B;
+	 A-->C;
+     ```
+     Maximum no. of parent class required : 1
+     
+     minimum no. of child class required : 2
+     
+- **Diagram of hybrid heritance.**
+
+	Here A, B, C, D & E is a class.
+	
+	- **Diagram-1**
+	
+     ```mermaid
+     graph TD;
+   	 A-->B;
+	 A-->C;
+	 B-->D;
+	 C-->D;
+     ```
+     
+     - **Diagram-2**
+	
+     ```mermaid
+     graph TD;
+   	 A-->B;
+	 A-->D;
+	 B-->c;
+     ```
+     
+ 	- **Diagram-3**
+	
+     ```mermaid
+     graph TD;
+   	 A-->B;
+	 A-->E;
+	 B-->C;
+	 B-->D;
+     ```
+     
+     Maximum no. of parent class required : n
+     
+     maximum no. of child class required : n
+     
+> **Program to know  simple level heritance.**
+
+		#include<iostream>
+		using namespace std;
+
+		class X {
+	
+			protected :
+			
+			int a;
+			int b;
+			int c;
+			int sum=0;
+		};
+
+		class Y : public X{
+
+			public:
+			
+			void inputdata(){
+			
+			cout << " Enter a :";
+			cin  >> a;
+			cout << " Enter b :";
+			cin  >> b;
+			cout << " Enter c :";
+			cin  >> c;
+			sum = (a*a*a) + (b*b*b) + (c*c*c);
+		}
+		
+			void outputdata(){
+			
+			cout << "===================================="<< endl;
+			cout << "cube of A : "<< a*a*a << endl;
+			cout << "cube of B : "<< b*b*b << endl;
+			cout << "cube of C : "<< c*c*c << endl;
+			cout << "===================================="<< endl;
+			cout << " sum of cube of A,B,C : " << sum << endl;
+			cout << "===================================="<< endl;
+			
+		}
+		};
+
+		int main(){
+		
+		Y y1;
+		y1.inputdata();
+		y1.outputdata();
+		}
+		
+> **Program to know  simple level heritance.**
+
+		
+		#include<iostream>
+		using namespace std;
+
+		class X {
+	
+			protected :
+			
+			int a;
+			
+			public :
+			void setdataZ(){
+				cout << "Enter a:";
+				cin  << a;
+			}
+			void getdataZ(){
+				cout << "A : " << a << endl;
+			}
+			
+		};
+
+		class Y : public X{
+
+			protected :
+			
+			int b;
+			
+			public :
+			void setdataY(){
+				cout << "Enter b:";
+				cin  << b;
+			}
+			void getdataY(){
+				cout << "B : " << b << endl;
+			}
+		};
+		
+		class Z : public Y{
+
+			protected :
+			
+			int c;
+			
+			public :
+			void setdataZ(){
+				cout << "Enter c:";
+				cin  << c;
+			}
+			void getdataZ(){
+				cout << "C : " << c << endl;
+			}
+		};
+
+		int main(){
+		
+		Z z1;
+		z1.setdataX();
+		z1.setdataY();
+		z1.setdataZ();
+		
+		z1.getdataX();
+		z1.getdataY();
+		z1.getdataZ();
+		}
