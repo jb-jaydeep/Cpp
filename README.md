@@ -1229,3 +1229,160 @@
 			w.getKel();
 			w.getWeather();
 		}
+
+***
+> **CHAPTER - 6**
+
+> **POLYMORPHISM.**
+***
+> **6.1**
+
+- **WHAT IS POLYMORPHISM?**
+
+	Polymorphism is a method where we can create multiplt formation or structure of single method.
+	
+	Polymorphism is a combination of two greek words poly & morphs.
+	
+	Poly means multiple.
+	
+	Morphs means structure,behaviour,forms.
+		
+- **TYPES OF POLYMORPHISM.**
+
+	- **Run time.**
+		- **Method overriding.**
+		- **Virtual function.**
+		
+	- **Compile time**
+		- **Method overloading.**
+		- **Operator overloading.**
+		
+- **METHOD OVERLOADING.**
+
+	When we create same method with multiple parameters in same class, it's called method overloading.
+	
+	- **Rules of method overloading.**
+	
+		1). Class must be same.
+		
+		2). Name must be same of all methods.
+		
+		3). Parameters must be different of all methods.
+		
+	- **Example of method overloading.**
+	
+			#include<iostream>
+			using namespace std;
+			class Mathamatics {
+
+				public :
+
+					void calculate(int a, int b) {
+
+						cout << "=================================="<<endl;
+						cout << "Division of A & B             : " << a / b << endl; 
+					}
+
+					void calculate(int a, int b, int c) {
+
+						cout << "Subtraction of A, B, & C      : " << a - b - c << endl; 
+					}
+
+					void calculate(int a, int b, int c, int d) {
+
+
+						cout << "Multiplication of A, B, C & D : " << a * b * c * d << endl; 
+					}
+
+					void calculate(int a, int b, int c, int d, int e) {
+
+						cout << "Addition of A, B, C, D & E    : " << a + b + c + d + e << endl; 
+						cout << "=================================="<<endl;
+
+					}
+
+			};
+
+
+			int main() {
+
+
+				int a,b,c,d,e;
+
+				Mathamatics m1;
+
+				    cout << "Enter a A : ";
+				    cin  >> a;
+				    cout << "Enter a B : ";
+				    cin  >> b;
+				    cout << "Enter a C : ";
+				    cin  >> c;
+				    cout << "Entre a D : ";
+				    cin  >> d;
+				    cout << "Enter a E : ";
+				    cin  >> e;
+
+
+			    m1.calculate(a,b);
+
+			    m1.calculate(a,b,c);
+
+			    m1.calculate(a,b,c,d);
+
+			    m1.calculate(a,b,c,d,e);
+
+			}
+	
+- **METHOD OVERRIDING.**
+
+	When we recreate the same method in derived(child) class with same parameters, it's called method overriding.
+	
+	- **Rules of method overriding.**
+	
+		1). Class must be derived(child).
+		
+		2). Name must be same of all methods.
+		
+		3). Parameters must be same of all methods.
+		
+	- **Example for method overriding.**
+	
+			#include<iostream>
+			using namespace std;
+			class Mathamatics {
+
+				public :
+
+					void calculate(int a, int b) {
+
+						cout << "=================================="<< endl;
+						cout << "Division of A & B             : " << a / b << endl; 
+					}
+			};
+			
+			class Mathamaticsnew : public Mathamatics {
+			
+				public :
+				
+				void calculate() {
+				
+					cout << "=================================="<< endl;
+					cout << "Division of" << A << " & " << B << " : " << a / b << endl; 
+					cout << "=================================="<< endl;
+				}
+			};
+			
+			int main() {
+			
+				Mathamaticsnew m;
+				m.calculate(20,4); //calling of child class method.
+				m.Mathamatics :: calculate(20,4); //calling of parent class method.
+			}
+
+- **DIFFERENCE BETWEEN method overriding & method overloading.**
+
+	|     **METHOD**    |      **CLASS NAME**      |      **METHOD NAME**      |      **PARAMETERS POSITION**      |
+	| :---:        |     :---:     |         :---: |      :---:     |
+	| **METHOD OVERLOADING**   |     SAME     |    SAME    |      DIFFERENT      |
+	| **METHOD OVERRIDING**   |    DERIVED    |    SAME    |      SAME      |
+	
