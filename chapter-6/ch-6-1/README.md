@@ -13,7 +13,7 @@
 
 <u>**Output**</u> :
 
-<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-1(Fundamental%20Booster)/images/pr-1-1.PNG" height = "200px" alt = "unable to load image.">
+<img src="https://user-images.githubusercontent.com/114164037/209967431-e68fd843-c9b0-436e-ae8e-46e395b2639b.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 2**</u> : Write a program to implement method overriding by following below mentioned criteria:
 - Class Cricket -> Class T20Match
@@ -24,4 +24,4 @@
 
 <u>**Output**</u> :
 
-<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-1(Fundamental%20Booster)/images/pr-1-2.png" height = "200px" alt = "unable to load image.">
+<img src="https://user-images.githubusercontent.com/114164037/209967486-5b848e4b-31d2-479e-8b01-10520ac11ee3.png" height = "200px" alt = "unable to load image.">
