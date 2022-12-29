@@ -1166,7 +1166,7 @@
 		
 	Functions or attributes which are being acceseed from multiple sources are called ambigous.
 
-> **Program to know  hybrid heritance **
+> **Program to know hybrid heritance.**
 
 > **using also Temporary solution method for solve a ambiguity.**
 
@@ -1379,7 +1379,7 @@
 				m.Mathamatics :: calculate(20,4); //calling of parent class method.
 			}
 
-- **DIFFERENCE BETWEEN method overriding & method overloading.**
+- **DIFFERENCE BETWEEN METHOD OVERRIDING & METHOD OVERLOADING.**
 
 	|     **METHOD**    |      **CLASS NAME**      |      **METHOD NAME**      |      **PARAMETERS POSITION**      |
 	| :---:        |     :---:     |         :---: |      :---:     |
