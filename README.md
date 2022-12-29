@@ -1056,7 +1056,7 @@
 		i.outputdataICICI();
 		}
 
-- **Program to know  multiple heritance**
+> **Program to know  multiple heritance**
 
 		#include<iostream>
 		using namespace std;
@@ -1150,5 +1150,82 @@
 		}
 
 - **AMBIGUITY**
+
+	It occurs when we tries to access same data from different sources which are not directly connected each other.
+	
+	It mainly occurs in multiple and hierarchical inheritance.
+	
+	There are two differnce ways to resolve the ambiquity.
+	
+	- **Temporary solution.**
 		
-						
+		-Using scope resolution operator.
+		
+	- **Permenant solution.**
+		- Using virtual function.
+		
+	Functions or attributes which are being acceseed from multiple sources are called ambigous.
+
+> **Program to know  hybrid heritance **
+
+> **using also Temporary solution method for solve a ambiguity.**
+
+		#include<iostream>
+		using namespace std;
+
+		class Temp {
+			protected:
+				double c;
+
+			public :
+
+				void setTemp(){
+					cout<<"Enter celcius";
+					cin >> c;
+				}
+		};
+
+		class Feh : public Temp {
+			protected : 
+			     double f;
+
+			public :
+				void getFeh(){
+
+					f = (c*(9/5)) + 32;
+					cout << c << "celcius" << f << "frs" << endl;
+
+				}
+		};
+
+		class Kel : public Temp{
+			protected :
+			double k;
+
+			public :
+				void getKel(){
+
+					k = c + 273.15;
+					cout << c << "celcius" << k << "kelvin" << endl;
+				}
+		};
+
+		class Weather : public Feh, public Kel{
+
+			public :
+				void getWeather(){
+					cout << "celcius" << Feh :: c << endl;
+					cout << "feh"     << Feh :: f << endl;
+					cout << "kelvin"  << Kel :: k << endl;
+			};
+
+		};
+
+		int main(){
+			Weather w;
+			w.Feh :: setTemp();
+			w.Kel :: setTemp();
+			w.getFeh();
+			w.getKel();
+			w.getWeather();
+		}
