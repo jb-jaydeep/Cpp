@@ -549,46 +549,49 @@
 				//program.....
 				#include<iostream>
 				using namespace std;
-				class Hotel {
-				private : 
-				int id;
-				string name;
-				public :
-				Hotel () {
-				cout << "Welcome to the TGB"<< endl 
-				cout << "Enter your ID NO. : ";
-				cin  << id;
-				cout << "Your id is :" << id << endl;
-			    }
 
-				Hotel (int id, string name) {
+				 //Illustrate the use of implicit and explicit copy constructor.
 
-						this -> id = id;
-						this -> name = name;
+				 class Hotel {
+						private : 
+					    int id;
+						string name;
+						public :
+						Hotel () {
+						cout << "Welcome to the TGB"<< endl;
 
-						cout << "Your id is :" << id << endl
-						      << "Name :" << name << endl;
-				}
-				//Explicit copy constructor...
-				Hotel (Hotel &h) {
+					    }
 
-						h.id = id;
-						h.name = name;
+						Hotel (int id, string name) {
 
-						cout << "Your id is :" << id << endl
-						     << "Name :" << name << endl;
-				}
-				};
+								this -> id = id;
+								this -> name = name;
 
-					int main() {
+								cout << "Your id is :" << id << endl
+								      << "Name :" << name << endl;
+						}
 
-					Hotel h;
-					Hotel h1(101,"Jaydeep");
-					Hotel h2(102,"Jay")
-					Hotel h3(103,"Deep")
-					Hotel h4 = h1; // Implicit copy constructor.
-					Hotel hs(h2); // Explicit copy constructor.
-				}
+
+						//Explicit copy constructor...
+						Hotel (Hotel &h) {
+
+								id = h.id;
+								name = h.name;
+
+								cout << "Your id is :" << id << endl
+								     << "Name :" << name << endl;
+						}
+						};
+
+							int main() {
+
+							Hotel h;
+							Hotel h1(101,"Jaydeep");
+							Hotel h2(102,"Jay");
+							Hotel h3(103,"Deep");
+							Hotel h4 = h1; // Implicit copy constructor.
+							Hotel h5(h2); // Explicit copy constructor.
+						}
 																				
 		
 - **WHAT IS DESTRUCTOR?**
