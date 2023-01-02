@@ -1,6 +1,6 @@
 # CHAPTER- 6.
 
-## 6.1
+## 6.2
 
 <u>**Aim 1**</u> :  Write a program to overload < operator to find which object contains higher value from given 2 numbers.
 
