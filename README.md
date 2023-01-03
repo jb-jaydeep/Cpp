@@ -1388,4 +1388,97 @@
 	| :---:        |     :---:     |         :---: |      :---:     |
 	| **METHOD OVERLOADING**   |     SAME     |    SAME    |      DIFFERENT      |
 	| **METHOD OVERRIDING**   |    DERIVED    |    SAME    |      SAME      |
+
+- **OPERATOR OVERLOADING.**
+
+	It is a concept in which we can perform mathamatical or logical operations between objects of same class.
+
+- **TYPES OF OPERATOR OVERLOADING.**
+	- **UNARY OPERATOR OVERLOADING.**
+	- **BINARY OPERATOR OVERLOADING.**
 	
+- **Example of unary operator overloading.**
+
+			#include<iostream>
+			using namespace std;
+
+			//WAP for unary increment (++) and decrement (--) operator overloading.
+
+			class Math{
+
+				int a,tmpa;
+
+				public:
+
+					void setdata(){
+
+						cout << "enter a : ";
+						cin  >> a;
+						tmpa = a;
+					}
+
+					void getdata(){
+
+						cout <<"A : " << a << endl;
+					}
+
+					Math operator++(){
+
+						Math tmp;
+						cout << "A after increment....."<< endl;
+						tmp.a = ++a;
+					}
+						Math operator--(){
+
+						Math tmpex;
+						cout << "A after decrement....."<< endl;
+						tmpex.tmpa = --tmpa;
+				}
+			};
+
+			int main(){
+				Math m1,m2,m3;
+				m1.setdata();
+				m1.getdata();
+				m2 = ++m1;
+				m2.getdata();
+				m3 = --m1;
+				m3.getdata();
+			}
+	
+- **Example of binary operator overloading.**
+
+			#include<iostream>
+			using namespace std;
+
+			//WAP to add two objects using binary plus (+) operator overloading.
+
+			class Math {
+
+				int a;
+
+				public : 
+				void setdata(){
+
+					cout << "Enter a : ";
+					cin  >> a;
+				}
+
+				Math operator+(Math m2){
+
+					Math tmp;
+
+					tmp.a = this->a + m2.a;
+
+					cout << "Addition of both objects's a : " << tmp.a << endl;
+				}
+			};
+
+			int main(){
+
+				Math m1,m2,m3;
+				m1.setdata();
+				m2.setdata();
+				m3 = m1 + m2;
+
+			}
