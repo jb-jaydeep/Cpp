@@ -17,6 +17,7 @@
 <img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-6(Multiprocessor)/images/pr-6-2.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 3**</u> :  Write a program  which illustrate the use of Method Overriding concept.
+
 <u>**Program File**</u> : pr-6-3.cpp
 
 <u>**Output**</u> :
@@ -24,6 +25,7 @@
 <img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-6(Multiprocessor)/images/pr-6-3.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 4**</u> :  Write a program for unary increment (++) and decrement (--) operator overloading.
+
 <u>**Program File**</u> : pr-6-4.cpp
 
 <u>**Output**</u> :
@@ -31,6 +33,7 @@
 <img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-6(Multiprocessor)/images/pr-6-4.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 5**</u> :  Write a program to add two objects using binary plus (+) operator overloading.
+
 <u>**Program File**</u> : pr-6-5.cpp
 
 <u>**Output**</u> :
@@ -38,6 +41,7 @@
 <img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-6(Multiprocessor)/images/pr-6-5.png" height = "200px" alt = "unable to load image.">
 
 <u>**Aim 6**</u> :  Write a program to add two distances using binary plus (+) operator overloading.
+
 <u>**Program File**</u> : pr-6-6.cpp
 
 <u>**Output**</u> :
