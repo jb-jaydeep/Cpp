@@ -28,4 +28,4 @@ output :
 
 <u>**Output**</u> :
 
-<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-1(Fundamental%20Booster)/images/pr-1-1.PNG" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/chapter-6/ch-6-3/image/ch-6-3-1.png" height = "200px" alt = "unable to load image.">
