@@ -24,4 +24,4 @@ accordingly.
 
 <u>**Output**</u> :
 
-<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-1(Fundamental%20Booster)/images/pr-1-1.PNG" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/chapter-7/ch-7-1/image/ch-7-1-1.png" height = "200px" alt = "unable to load image.">
