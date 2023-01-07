@@ -12,4 +12,4 @@ an uppercase letter
 
 <u>**Output**</u> :
 
-<img src="" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/chapter-8/image/ch-8-1.png" height = "200px" alt = "unable to load image.">
