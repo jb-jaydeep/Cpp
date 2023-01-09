@@ -1482,3 +1482,460 @@
 				m3 = m1 + m2;
 
 			}
+
+***
+> **Chapter -7**  
+
+> **DATA ABSTRACTION.**
+***
+
+> **7.1**
+
+ -**WHAT IS DATA ABSTRACTION?**
+ 
+ Abstraction means hiding.
+	
+ Hide logic from user.
+
+ Introducer from attributes.
+	
+ Abstraction is a combination of 2 Latin word.
+	
+1. Abs  Means   Draw.
+
+2. Trehere  means away.
+
+- **TYPE OF DATA ABSTRACTION.**
+
+	1. Use access modifier.
+	2. Abstract Class.
+		- Pure virtual function.
+
+1. **Access modifier.**
+- Private
+- Protected
+- Public
+
+- **EXAMPLE.**
+		
+		#include<iostream>
+		using namespace std;
+		/*WAP to abstract some attributes of class Admin to
+		prevent them to be inherited by its child classes.
+		- Class Admin -> Class Manager
+		- Class Manager -> Class Employee
+		- Class Admin has following members:
+		- company_name
+		- manager_salary
+		- employee_salary
+		- total_staff
+		- total_annual_revenue
+		- can_terminate
+		- use all attributes accessibility in parent class and
+		child class properly.
+		- override a method myAccess() in both child
+		classes to display all parent class’s members value
+		accordingly.*/
+
+		class Admin {
+
+		    protected : 
+			string company_name;
+		    long long int manager_salary;
+		    long long int employee_salary;
+		    int total_staff;
+		    double total_annual_revenue;
+		    string can_terminate;
+
+
+			Admin(){
+
+				company_name = "Tata_Motors_Pvt_Ltd.";
+				manager_salary = 50000;
+				employee_salary = 15000;
+				total_staff = 121;
+				total_annual_revenue = 200.5;
+				can_terminate = "Manager&Employee";
+				}
+			public :	
+			void myAccess(){
+
+					cout <<"Admin can Access this All Attributes......" << endl
+						 <<"------------------------------------------" << endl
+						 <<"Company name                : " << company_name << endl
+					     <<"Manager salary              : " << manager_salary << endl
+					     <<"Empoyee salary              : " << employee_salary << endl
+					     <<"Total staff in company      : " << total_staff << endl
+					     <<"Total Annual Revenue in Cr  : " << total_annual_revenue << endl
+						 <<"Can terminate               : "<< can_terminate << endl
+						 <<"------------------------------------------" << endl << endl;
+				}	
+		};
+
+		class Manager : public Admin {
+
+				public :
+
+				void myAccess(){
+					string can_terminate ="Employee";
+
+				    cout <<"Manager can Access this All Attributes......" << endl
+						 <<"------------------------------------------" << endl
+						 <<"Company name           : " << company_name << endl
+					     <<"Manager salary         : " << manager_salary << endl
+					     <<"Empoyee salary         : " << employee_salary << endl
+					     <<"Total staff in company : " << total_staff << endl
+						 <<"Can terminate          : "<< can_terminate << endl
+						 <<"------------------------------------------" << endl << endl;	
+
+				}	
+
+		};
+
+		class Employee : public Manager{
+
+			public :
+			void myAccess(){
+
+			cout <<"Employee can Access this All Attributes......" << endl
+				 <<"------------------------------------------" << endl	
+				 <<"Company name   : " << company_name << endl
+				 <<"Empoyee salary : " << employee_salary << endl 
+				 <<"------------------------------------------" << endl << endl;
+			}
+		};
+
+		int main(){
+		Employee e1;
+		e1.myAccess();
+		e1.Manager::myAccess();
+		e1.Admin::myAccess();
+
+		}
+
+> **7.2**
+
+- **Pointer object.**
+
+	An object which stores an address of another object.
+	
+	Pointer objects can be create of the same class's object only.
+	
+	It can be also created for derived class when derived class and base class both have the overridden virtual function.
+	
+	-E.x 
+	
+	Demo d1;
+	
+	Demo *d2;
+	
+	d2 = &d1;
+
+	All the methods or attributes  of a pointer object can be accessed by '->' arrow instead of '.'
+	
+- **Virtual Function.**
+
+	It indicates the Single existence of any method to the whole program.
+	
+	It can be used to remove ambiguity permanently.
+	
+	Abstract class (using pure virtual function).
+
+ 	A class which cannot be instantiated.
+	
+	Can not create object of the class.
+	
+ 	All the methods or  functionality of abstract class cannot be used directly.
+
+ 	In C++, Abstract class can be created using.
+	
+- **pure virtual function.**
+
+	Virtual function with initial value zero.
+	
+ 	It doesn't have body.
+	
+  	Pure virtual function is only a declaration.
+	
+ 	If we want to use methods or attributes of Yet abstract class the pure virtual method of class must be reincarnated in child class with the same signature of method.
+
+  	It must have the same name, Same parameters and same  Return data type as parent class's pure virtual function.
+
+- **EXAMPLE.**
+
+		#include<iostream>
+		using namespace std;
+
+		/*
+		WAP to perform some basic mathematical operations
+		using Abstract class such like:
+		- area of circle
+		- area of triangle
+		- area of rectangle
+		- use one single pure virtual function named
+		calculate() to perform all above operations*/
+
+		class Operation {
+			protected :
+			double circle,tri,rec;
+			protected :
+
+				virtual void calculate(int a,int b ,double c) = 0;
+
+				void area_circle(double r){
+
+					circle = 3.14 * r*r;
+					cout << "Area of Circle with radius " << r << " : " << circle << endl;	
+				}
+				void area_triangle(double h , double b){
+
+					tri = (h*b)/2;
+					cout << "Area of Triangle with height " << h << " & base " << b << " : " << tri << endl;	
+				}
+				double area_rectangle(double w, double l){
+
+					rec = w*l;
+					cout << "Area of recangle with length " << l << " & width " << w << " : " << rec << endl;
+				}
+		};
+
+		class User : protected Operation{
+				int a;
+			public :
+
+				void calculate(int x,int b ,double c){
+
+					cout << "Enter 1 for Area of Circle"<<endl
+						 << "Enter 2 for Area of Triangle"<<endl 
+						 << "Enter 3 for Area of rectangle"<<endl;
+					cin  >> a;
+					switch(a)
+					{
+						double r;
+						case 1:
+
+								cout << "Enter a Radius of circle : ";
+								cin  >> r;
+
+								area_circle(r);
+								break;
+						case 2:
+							double h,b;
+								cout << "Enter a height of triangle : ";
+								cin  >> h;
+								cout << "Enter a base of triangle : ";
+								cin  >> b;
+
+								area_triangle(h,b);
+								break;
+						case 3:
+							double w,l;
+								cout << "Enter a width of rectangle : ";
+								cin  >> w;
+								cout << "Enter a length of recangle : ";
+								cin  >> l;
+
+							area_rectangle( w,l);
+							break;
+
+					}
+
+				}
+		};
+
+		int main(){
+			User u1;
+			u1.calculate(1,1,3.14);
+		}
+
+***
+ > **CHAPTER - 8.**
+ 
+ > **EXCEPTION HANDLING.**
+ ***
+- **WHAT IS EXCEPTION?**
+
+	It's also a kind of error which occurs by logical mistake.
+ 
+ 	Exceptions can be called one type of system timeout or restriction to use some method.
+ 
+ 	It occurs on compiling time and breaks the executing flow of the compiler.
+
+- **DIFFERENCE BETWEEN ERROR AND EXCEPTION.**
+
+	Error == compile time == syntax mistake.
+	
+	Exception == run time == logical mistake.
+	
+ 	Error only occurs by developer.
+	
+ 	Exception occurred by developer and user.
+
+- **WHAT IS EXCEPTION HANDLING?**
+
+		#include<iostream>
+		using namespace std;
+		#include<string.h>
+		
+		/*WAP to implement exception handling mechanism for
+		different types of scenarios:
+		- a number cannot be divide by zero
+		- a person cannot be able to vote if his/her age is less
+		than 18
+		- a password cannot be validate if it doesn’t contains
+		an uppercase letter*/
+
+		class Operation {
+			public :
+			int i,count=0;
+			string negativem = "Your password doesn't contains uppercase letter";
+			string a;
+			int length;
+			char pass[100];
+			string positivem = "You entered correct password" ;
+			public :
+			//division- logic
+			void div(double a, double b){
+
+				if(b==0){
+
+					throw b;	
+				}else{
+
+					cout <<" Answer : " << a/b << endl;
+				}
+			}
+			//voting-logic
+			double allowvoter(double age){
+
+				if(age <18.0){
+
+					throw age;
+				}
+				else{
+
+					cout <<" you are alligible for vating...." << endl; 
+				}
+			}
+			//password-logic
+			void passcheck(){
+
+					cout <<" Enter Email : ";
+					cin  >> a; 
+
+					cout <<" Enter Password : ";
+					cin  >> pass; 
+
+					length = strlen(pass);
+
+					for( i=0 ; i < length ; i++)
+				{
+				if(pass[i]>= 65 && pass[i]<=90) {
+
+				    count++;
+				}
+			   }
+
+			    if(count >= 1) {
+			      cout << endl <<positivem << endl;   
+			   }
+			   else {
+			       throw count;
+			   }
+			}	
+		};
+
+		class Division : public Operation {
+			double a,b;
+
+			public :
+				Division(){
+					cout <<" Welcome to calculater...." << endl;
+				}
+
+				void setdata(){
+
+					cout <<" Enter A : ";
+					cin  >> a; 
+
+					cout <<" Enter B : ";
+					cin  >> b; 
+				}
+
+				void getdivision(){
+					try {
+						div(a,b);
+					}
+
+				catch(double b){
+
+						cout << " " << b <<" Can not divided by Zero" << endl;
+					}	
+				}		
+			};
+
+		class Vote : public Operation {
+			double age;
+
+			public :
+			 Vote(){
+
+					cout <<" Welcome to check eligibility for voting...." << endl;
+				}
+
+				void setdatavote(){
+
+					cout <<" Enter your Age : ";
+					cin  >> age; 
+							}
+
+				void geteligibility(){
+
+
+					try {
+					allowvoter( age);
+
+					}
+
+					catch(double age){
+
+						cout << " " << age <<" Can not eligible for vote..." << endl;
+					}
+						catch(string age){
+
+						cout << " " << age <<" Can not eligible for vote..." << endl;
+					}			
+				}
+
+			};
+
+		class Password : public Operation{
+
+			public :
+
+
+				void getpassword(){
+					try {
+						passcheck();
+					}
+
+				catch(int count){	
+						cout << negativem << endl;
+					}
+
+				}
+		};
+
+		int main(){
+
+			Division d;
+			d.setdata();
+			d.getdivision();
+
+			Vote v;
+			v.setdatavote();
+			v.geteligibility();
+
+			Password p;
+			p.getpassword();
+		}
