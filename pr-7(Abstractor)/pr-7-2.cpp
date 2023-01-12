@@ -1,10 +1,12 @@
+
+
 /*  Create hybrid inheritance and remove ambiguity permanently.  */
 
 #include<iostream>
 using namespace std;
 
 class A {
-
+public :
     int a;
 
     public :
@@ -23,10 +25,10 @@ class A {
 
 class B : virtual public A {
 
-    int b;
+    
 
     public :
-
+		int b;
        virtual void setB() {
 
             cout << "Enter B : ";
@@ -41,10 +43,10 @@ class B : virtual public A {
 
 class C : virtual public A {
 
-    int c;
+   
 
     public :
-
+ 		int c;
        virtual void setC() {
 
             cout << "Enter C : ";
@@ -63,16 +65,16 @@ class D : public B , public C {
 
     public :
 
-       virtual void setD() {
+        void setD() {
 
             cout << "Enter D : ";
             cin  >> d;
         }
 
-        virtual void getD() {
+         void getD() {
 
             cout << endl << " D : " << d << endl;
-            Cout << "Sum : " << a+b+c+d << endl;
+            cout << "Sum : " << a+b+c+d << endl;
         }
 };
 
@@ -91,3 +93,4 @@ int main() {
     d1.getD();
 
 }
+
