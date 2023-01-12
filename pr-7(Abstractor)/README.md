@@ -15,4 +15,4 @@
 
 <u>**Output**</u> :
 
-<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-7(Abstractor)/images/pr-7-2.png" height = "200px" alt = "unable to load image.">
+<img src="https://github.com/jb-jaydeep/Cpp/blob/main/pr-7(Abstractor)/images/pr-7-2a.png" height = "200px" alt = "unable to load image.">
