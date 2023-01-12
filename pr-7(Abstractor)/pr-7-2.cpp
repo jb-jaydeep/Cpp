@@ -9,7 +9,7 @@ class A {
 
     public :
 
-        void setA() {
+      virtual  void setA() {
 
             cout << "Enter A : ";
             cin  >> a;
@@ -27,13 +27,13 @@ class B : virtual public A {
 
     public :
 
-        void setB() {
+       virtual void setB() {
 
             cout << "Enter B : ";
             cin  >> b;
         }
 
-        void getB() {
+       virtual void getB() {
 
             cout << endl << " B : " << b << endl;
         }
@@ -45,7 +45,7 @@ class C : virtual public A {
 
     public :
 
-        void setC() {
+       virtual void setC() {
 
             cout << "Enter C : ";
             cin  >> c;
@@ -63,7 +63,7 @@ class D : public B , public C {
 
     public :
 
-        void setD() {
+       virtual void setD() {
 
             cout << "Enter D : ";
             cin  >> d;
@@ -72,6 +72,7 @@ class D : public B , public C {
         virtual void getD() {
 
             cout << endl << " D : " << d << endl;
+            Cout << "Sum : " << a+b+c+d << endl;
         }
 };
 
